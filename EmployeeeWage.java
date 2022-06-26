@@ -1,7 +1,20 @@
+import java.util.Scanner;
+
 public class EmployeeeWage {
     public static int Total_Hours=100,Days = 20,Part_time = 8,Wage_per_Hour = 20,Full_day_Hour = 8,Total_wage=0;
     public static void main(String[] args) {
         System.out.println("Welcome to Employee wage computation program");
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter wage per hour");
+        Wage_per_Hour = in.nextInt();
+        System.out.print("Enter full day hour");
+        Full_day_Hour = in.nextInt();
+        System.out.print("Enter part time ");
+        Part_time = in.nextInt();
+        System.out.print("Enter working Days");
+        Days = in.nextInt();
+        System.out.print("Enter Total hours");
+        Total_Hours =in.nextInt();
         employeeWage(Wage_per_Hour,Full_day_Hour,Part_time);
     }
     public static void employeeWage(int Wage_per_hour,int Fulldayhour,int parttime){
